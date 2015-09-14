@@ -23,6 +23,10 @@ public class Bounce
 	}
 	public void LateUpdate()
 	{
+		if (!m_isEnable)
+		{
+			return;
+		}
 		if (null == Target)
 		{
 			return;
