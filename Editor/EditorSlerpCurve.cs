@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEditor;
+using System.Collections.Generic;
 
 public class EditorSlerpCurve
 {
@@ -13,6 +14,15 @@ public class EditorSlerpCurve
 			return;
 		}
 		SlerpCurve obj = ScriptableObject.CreateInstance<SlerpCurve>();
+		List<Vector3> posList = new List<Vector3>();
+		foreach (var gameObject in Selection.gameObjects)
+		{
+			posList.Add(gameObject.transform.position);
+		}
+		if (posList.Count > 1)
+		{
+			obj.Points = posList.ToArray();
+		}
 		AssetDatabase.CreateAsset(obj, filePath);
 	}
 }
