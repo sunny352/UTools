@@ -3,9 +3,9 @@
 public class BounceMono : MonoBehaviour
 {
 	public Transform Target;
-	public float Value;
-	public float MaxSpeed;
-	public float MinSpeed;
+	public float Value = 5.0f;
+	public float MaxSpeed = 10.0f;
+	public float MinSpeed = 2.0f;
 	void LateUpdate()
 	{
 		if (null == Target)

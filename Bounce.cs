@@ -3,9 +3,9 @@
 public class Bounce
 {
 	public Transform Target;
-	public float Value;
-	public float MaxSpeed;
-	public float MinSpeed;
+	public float Value = 5.0f;
+	public float MaxSpeed = 10.0f;
+	public float MinSpeed = 2.0f;
 
 	private Transform transform;
 	public void Enable()
