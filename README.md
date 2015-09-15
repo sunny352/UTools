@@ -6,6 +6,8 @@ Unity游戏内工具类集合，设计为Unity工程的子模块模式
 
 ## CDManager.cs/CDManagerMono.cs
 > CD管理器
+## ChargeEnergy.cs/ChargeEnergyMono.cs
+> 分阶段蓄力功能
 
 ## ComboCounter.cs/ComboCounterMono.cs
 > 连击计数器，间隔一定时间会终止计数，再启动会从头开始
