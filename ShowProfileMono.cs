@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Profiling;
 //用于显示游戏运行帧率和内存占用
 public class ShowProfileMono : MonoBehaviour
 {
