@@ -21,3 +21,9 @@ Unity游戏内工具类集合，设计为Unity工程的子模块模式
 
 ## SlerpCurve.cs/EditorSlerpCurve.cs
 > 连接多点的平滑曲线工具
+
+## ZipUtil.cs
+> Zip压缩解压代码，需要Plugins中的UniRx和ShareZipLib的支持
+
+## HttpUtil.cs DownloadFileHandler.cs
+> 文件下载代码，支持断点续传
